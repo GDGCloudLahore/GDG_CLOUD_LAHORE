@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "521135843225",
+    "project_id": "gdg-cloud-lahore-3f69e",
+    "storage_bucket": "gdg-cloud-lahore-3f69e.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:521135843225:android:26b3c2f1ba908968db9508",
+        "android_client_info": {
+          "package_name": "com.project.gdg_cloud_lahore"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "521135843225-8er0f7q9ovie7q321bpq2h9gg9fiomdg.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBxrJnvtA6NL10C2jADtznpRBBUDpgvmoc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "521135843225-8er0f7q9ovie7q321bpq2h9gg9fiomdg.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

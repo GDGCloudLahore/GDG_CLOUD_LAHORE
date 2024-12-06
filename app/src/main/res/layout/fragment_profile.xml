@@ -1,20 +1,17 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/white"
+    android:background="@color/white">
 
-    >
-
-    <!-- Animated App Icon -->
+    <!-- Static App Icon (No Animation) -->
     <ImageView
         android:id="@+id/animatedIcon"
         android:layout_width="250dp"
         android:layout_height="150dp"
         android:src="@drawable/gdgcloudlahore"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="20dp"
-        android:contentDescription="Animated App Icon"
-        android:animation="@anim/scale_animation" />
+    android:layout_centerHorizontal="true"
+    android:layout_marginTop="20dp"
+    android:contentDescription="App Icon"/>
 
     <!-- User Icon -->
     <ImageView
@@ -35,8 +32,6 @@
         android:orientation="vertical"
         android:background="@drawable/custom_signin"
         android:padding="10dp"
-        android:layout_margin="12dp"
-        android:elevation="4dp"
         android:layout_below="@id/userIcon"
         android:layout_marginTop="16dp"
         android:layout_centerHorizontal="true">
@@ -63,7 +58,7 @@
         android:elevation="10dp"
         android:layout_marginHorizontal="16dp"
         android:layout_below="@id/emailCard"
-        android:layout_marginTop="16dp">
+        android:layout_marginTop="96dp">
 
         <ImageView
             android:layout_width="24dp"
@@ -154,32 +149,21 @@
     </LinearLayout>
 
     <!-- Logout Button at the Bottom -->
-    <LinearLayout
+
+    <Button
         android:id="@+id/logoutButton"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:gravity="center_vertical"
-        android:background="@drawable/white_bg"
-        android:padding="16dp"
-        android:elevation="10dp"
-        android:layout_marginHorizontal="16dp"
+        android:layout_width="150dp"
+        android:layout_height="60dp"
+        android:layout_centerHorizontal="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginBottom="16dp">
+        android:layout_marginBottom="16dp"
+        android:background="@color/red"
+        android:gravity="center"
+        android:padding="12dp"
+        android:elevation="10dp"
+        android:text="Logout"
+        android:textSize="16sp"
+        android:textColor="@color/white" />
 
-        <ImageView
-            android:layout_width="24dp"
-            android:layout_height="24dp"
-            android:src="@drawable/ic_signout" />
-
-        <TextView
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="Logout"
-            android:textSize="16sp"
-            android:paddingStart="16dp"
-            android:textColor="@color/red" />
-    </LinearLayout>
 
 </RelativeLayout>

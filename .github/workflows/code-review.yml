@@ -1,0 +1,27 @@
+name: Code Scan
+
+on:
+  pull_request:
+    types: [opened, synchronize]
+
+jobs:
+  scan:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      issues: write
+
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Checkout gemini-code-scanner
+        uses: actions/checkout@v3
+        with:
+          repository: GDGCloudLahore/gemini-code-scanner  # Specify the repository
+          path: gemini-code-scanner  # Specify a directory to checkout to
+
+      - name: Gemini Code Scanner
+        uses: ./gemini-code-scanner  # Update the path to the action
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          MY_GITHUB_TOKEN: ${{ secrets.MY_GITHUB_TOKEN }}
